@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Core\App;
+use App\Model\Model;
 
 class UsersController
 {
@@ -19,7 +19,7 @@ class UsersController
      */
     public function store()
     {
-        App::get('database')->insert('users', [
+        Model::save('users', [
             'first_name' => $_POST['first_name']
         ]);
 

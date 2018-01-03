@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Core\App;
+use App\Model\Model;
 
 class PagesController
 {
@@ -11,7 +11,7 @@ class PagesController
      */
     public function home()
     {
-        $users = App::get('database')->selectAll('users');
+        $users = Model::All('users');
 
         return view('index', compact('users'));
     }
