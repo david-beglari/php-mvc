@@ -19,7 +19,7 @@ function dd($data, $rule = true)
 function view($name, $data = [])
 {
     extract($data);
-    return require "views/" . $name . ".view.php";
+    return require "views/{$name}.view.php";
 }
 
 /**
