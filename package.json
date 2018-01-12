@@ -1,0 +1,11 @@
+{
+  "name": "php-mvc",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "babel public/src/javascript -d public/output"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
